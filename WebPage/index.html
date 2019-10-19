@@ -8,22 +8,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="favicon.ico">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Navigation-bar -->
+  <div class="site-header">
+    <div class="container-navigation clearfix">
+      <div class="image-logo">
+        <a href="#"><img src="./img/logo/test-logo.jpg" alt="image logo"></a>
+      </div><!--.image-logo-->
+      <nav class="navigation-bar clearfix">
+        <a href="#">Home</a>
+        <a href="#client-needs">Services</a>
+        <a href="#contact-link">Contact</a>
+        <a href="#mission-link">About</a> 
+      </nav><!--.navigation-bar-->
+    </div><!--.container-->
+  </div><!--.site-header-->
+
+  <!-- Welcome -->
+  <div class="welcome parallax">
+    <div class="content-welcome clearfix">
+      <h1>Headline</h1>
+      <p>Sub-headline Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, deserunt? Sint commodi iure iste officiis obcaecati, temporibus animi, voluptate enim natus, accusamus minus ab rem soluta facilis similique accusantium facere. lore</p>
+      <a href="#" class="button-generic">Button</a>
+    </div>
+  </div>
+  
+  <!-- Client Needs -->
+  <a name="client-needs"></a>
+  <section class="client-needs">
+    <div class="header-section">
+      <h1><i class="fas fa-angle-left"></i> Needs <i class="fas fa-angle-right"></i></h1>
+    </div>
+    <div class="content-needs clearfix">
+      <!-- First need -->
+      <div class="need">
+        <div class="img img1"></div>
+        <div class="description">
+          <h2 class="header-card">Header</h2>
+          <p class="text-card">
+            A stand-on with an exceptional compact stance. Great for tight spaces and trailering.
+            
+          </p>
+        </div><!--.description-->
+        <div class="symbol symbol1"><i class="fas fa-clock"></i></div><!--.symbol-->
+      </div><!--.need-->  
+      <!-- Second need -->
+      <div class="need">
+        <div class="img img2"></div>
+        <div class="description">
+          <h2 class="header-card">Header</h2>
+          <p class="text-card">
+            A stand-on with an exceptional compact stance. Great for tight spaces and trailering.
+          </p>
+        </div><!--.description-->
+        <div class="symbol symbol2"><i class="fas fa-gas-pump"></i></div><!--.symbol-->
+      </div><!--.need-->
+      <!-- Third need -->
+      <div class="need">
+        <div class="img img3"></div>
+        <div class="description">
+          <h2 class="header-card">Header</h2>
+          <p class="text-card">
+            A stand-on with an exceptional compact stance. Great for tight spaces and trailering.
+          </p>
+        </div><!--.description-->
+        <div class="symbol symbol3"><i class="fas fa-map-marker-alt"></i></div><!--.symbol-->
+      </div><!--.need-->
+    </div><!--.content-needs-->
+  </section>
+
+  <!-- Mission -->
+  <section class="mission">
+    <div class="content-mission">
+      <h1 class="header-mission">Mission</h1>
+      <p class="text-mission">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id, rerum modi possimus ab delectus sint tempora.
+      </p>
+      <a href="{% url 'mission' %}" class="button-generic mission">Button</a>
+    </div>
+  </section>
+
+<a name="mission-link"></a>
+  <!-- Quick Bio -->
+  <section class="quick-bio">
+    <div class="content-bio">
+      <div class="image-profile"></div>
+      <div class="description-bio">
+        <h1 class="header-bio">Headline</h1>
+        <p class="text-bio">Sub-headline Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, deserunt? Sint commodi iure iste officiis obcaecati, temporibus animi, voluptate enim natus, accusamus minus ab rem soluta facilis similique accusantium facere. lore</p>
+        <a href="http://fernando74lr.pythonanywhere.com/" class="button-generic" target="_blank">Button</a>
+      </div>
+    </div>
+  </section>
+
+<a name="contact-link"></a>
+  <!-- Contact -->
+  <section class="contact">
+    <a href="http://fernando74lr.pythonanywhere.com/contact/" class="button-generic contact" target="_blank"> GO CONTACT</a>
+    <div class="contact-description">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus corporis provident nihil.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content-footer">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta nostrum amet veniam nesciunt laborum nam quae optio! Id eum veritatis ipsa dolorum doloribus est quis consequuntur labore, deleniti a.
+      </p>
+      <div class="cont-icon-foot"><i class="far fa-bookmark"></i></div>
+    </div>
+    <div class="contact-social">
+      <h2>Social <span>media</span></h2>
+      <ul>
+        <li><a href="https://www.facebook.com/fercho.lopzz?ref=br_rs"><i class="fab fa-facebook-square" target="_blank"></i></a></li>
+        <li><a href="http://fernando74lr.pythonanywhere.com/contact/"><i class="fab fa-whatsapp" target="_blank"></i></a></li>
+        <li><a href="https://www.instagram.com/fernando74lr/?hl=es-la"><i class="fab fa-instagram" target="_blank"></i></a></li>
+        <li><a href="https://www.pinterest.es/lopezramirez330/"><i class="fab fa-pinterest" target="_blank"></i></a></li>
+        <li><a href="http://fernando74lr.pythonanywhere.com/contact/"><i class="fas fa-envelope" target="_blank"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
