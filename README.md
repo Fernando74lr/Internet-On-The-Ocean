@@ -1,0 +1,2 @@
+# INTERNET-ON-THE-OCEAN
+The internet is not easily accessible in many areas of the world, like the Earth’s oceans. Fishermen, sailors, and others have limited data connection with the rest of the world. Although satellite internet is widely available, it is very expensive for a user to implement. Your challenge is to design a low-cost method of delivering internet to people located far away on the ocean.
