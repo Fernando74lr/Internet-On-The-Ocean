@@ -219,20 +219,17 @@ nav.navigation-bar {
 }
 
 /* Welcome */
-.parallax {
-    margin-top: 50px;
-    min-height: 600px; 
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url(../img/welcome/parking-bg-1.jpg);
+
+#myVideo {
+    width: 1280px;
+    height: 800px;
 }
+
 div.content-welcome {
     top: 40px;
     width: 40%;
     left: 100px;
+    margin-top: 20%;
     text-align: left;
     position: absolute;
     padding-bottom: 20px;
@@ -248,7 +245,7 @@ div.content-welcome h1 {
 }
 div.content-welcome p {
     margin: 1.3em 0;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
 }
 a.button-generic {
@@ -302,6 +299,29 @@ section {
     height: 550px;
     margin: 50px 0;
 }
+
+section.client-needs {
+    height: 500px;
+}
+
+section.client-needs2 {
+    height: 400px;
+}
+
+section.info-project {
+    height: 400px; 
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../img/mission/mission-bg.jpg);
+}
+
+section.mission {
+    height: 450px;
+}
+
 div.header-section h1 {
     margin: 0 35%;
     font-size: 2.2em;
@@ -324,6 +344,18 @@ div.content-needs {
     background: transparent;
     justify-content: space-between;
 }
+
+div.needs2 {
+    height: 400px;
+    display: flex;
+    padding: 0 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    background: transparent;
+    justify-content: space-between;
+}
+
 div.need {
     width: 300px;
     margin: 5px 0;
@@ -351,13 +383,23 @@ div.img {
     background-repeat: no-repeat;
 }
 .img1 {
-    background-image: url(../img/needs/time-bg-3.jpeg);
+    background-image: url(../img/needs/conectivity-bg.jpg);
 }
 .img2 {
-    background-image: url(../img/needs/gas-need-1.jpeg);
+    background-image: url(../img/needs/boat-bg.jpeg);
 }
 .img3 {
-    background-image: url(../img/needs/spot-bg-1.jpeg);
+    background-image: url(../img/needs/idea-bg.jpeg);
+}
+.img4 {
+    background-image: url(../img/needs/energy-bg.jpg);
+}
+.img5 {
+    background-position-y: -50px;
+    background-image: url(../img/needs/wild-life-bg.jpeg);
+}
+.img6 {
+    background-image: url(../img/needs/money-bg-2.jpg);
 }
 div.description {
     height: 150px;
@@ -382,6 +424,7 @@ p.text-card {
     font-family: 'Oswald', sans-serif;
 }
 div.symbol i {
+    margin-top: 2px;
     top: 260px;
     width: 70px;
     left: 230px;
@@ -391,16 +434,22 @@ div.symbol i {
     position: absolute;
 }
 div.symbol1 i {
+    font-size: 2em;
     color: #222;
 }
 div.symbol2 i {
+    font-size: 2em;
     color: #222;
 }
 div.symbol3 i {
+    font-size: 2em;
     color: #222;
 }
 @media only screen and (max-width:480px) {
     section.client-needs {
+        height: 1450px;
+    }
+    section.client-needs2 {
         height: 1450px;
     }
     div.header-section h1 {
@@ -418,6 +467,9 @@ div.symbol3 i {
     section.client-needs {
         height: 1520px;
     }
+    section.client-needs2 {
+        height: 1520px;
+    }
     div.header-section h1 {
         margin: 0 25%;
     }
@@ -429,6 +481,39 @@ div.symbol3 i {
         margin: 5% auto;
     }
 }
+
+/* Info Project */
+.info-project .info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    margin-left: 225px;
+}
+
+.info h2 {
+    position: absolute;
+    left: 790px;
+    height: 50px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    color: rgba(224, 67, 67, 0.9);
+}
+
+.info p {
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 10px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    font-size: 1.3em;
+}
+
 
 /* Mission */
 div.content-mission {
@@ -446,7 +531,7 @@ div.content-mission {
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     background-position-y: 30%;
-    background-image: url(../img/mission/mission-bg.jpg);
+    background-image: url(../img/benefits/benif.jpg);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
@@ -465,6 +550,7 @@ p.text-mission {
     font-style: italic;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgba(247, 247, 247, 0.5);    
 }
 a.mission {
     background-color: rgb(13, 69, 106);
@@ -481,8 +567,8 @@ section.quick-bio {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -80px;
-    background-image: url(../img/bio/landscape/landscape-bg.jpeg);
+    background-position-y: -40px;
+    background-image: url(../img/bio/tec-puebla-bg-2.jpg);
     padding-top: 75px;
     margin-bottom: 0;
     /* border: 1px solid black; */
@@ -515,17 +601,24 @@ div.description-bio {
     /* border: 1px solid black; */
     padding-right: 2%;
     margin-top: 45px;
+    margin-right:2%;
+    background-color: rgba(247, 247, 247, 0.5);
+    border-radius: 5%;
 }
 div.description-bio h1 {
+    width: 350px;
     font-size: 2.5em;
+    margin-left: 225px;
     margin-bottom: 5px;
     text-transform: uppercase;
+    text-align: right;
     font-family: 'Poppins', sans-serif;
 }
 div.description-bio p {
     color: black;
     font-size: 1.2em;
     font-weight: bold;
+    text-align: right;
     padding-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -713,10 +806,6 @@ footer {
 }
 .cont-icon-foot i {
     font-size: 3.2em;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease-in-out;
-}
-.cont-icon-foot i:hover {
     color: rgba(248, 64, 64, 0.747);
     transition: all 0.3s ease-in-out;
 }
@@ -750,13 +839,34 @@ footer {
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
-    width: 350px;
-    margin: 5% 0;
+    width: 140px;
+    margin: 3% 0;
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 145px;
     /* border: 1px solid green; */
 }
+
+.contact-social ul li.html-icon i {
+    font-size: 3.2em;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.contact-social ul li.html-icon i:hover {
+    color: rgb(228, 79, 37);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-social ul li.css-icon i {
+    font-size: 3.2em;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.contact-social ul li.css-icon i:hover {
+    color: rgb(21, 114, 183);
+    transition: all 0.3s ease-in-out;
+}
+
 .contact-social ul li {
     list-style: none;
     width: 42.5px;
@@ -820,450 +930,6 @@ footer {
     }
 }
 
-/* ========================== Register Page Css ==========================*/
-
-/* Register */
-section.register {
-    height: 425px;
-    width: 1135px;
-    margin: 50px auto;
-    border: 1px solid #bcc7d3!important;
-    border-radius: 10px;
-    position: relative;
-}
-.content-register {
-    font-family: sans-serif;
-    margin-right: 66%;
-    margin-left: 2%;
-    /* border: 1px solid black; */
-    display: flex;
-    
-}
-.buttons {
-    margin: 0 40px;
-}
-.content-register h2 {
-    font-size: 2em;
-    margin: 20px 40px;
-}
-form.register ul.register {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-form.register ul.register li label {
-    font-size: 1em;
-    font-weight: bold;
-}
-
-/* Forms */
-form.register input {
-    background-clip: padding-box;
-    border: 1px solid #bcc7d3;
-    border-radius: .25rem;
-    margin-bottom: 10px;
-    transition: border .15s ease;
-    padding: 8.5px;
-}
-form.register input:focus {
-    background-color: #ffffff;
-    border: 1.5px solid #b1e1e4;
-}
-
-/* Buttons */
-input.continue-register,
-a.cancel-register {
-    color: #ffffff;
-    font-size: 1.05em;
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all .4s ease;
-}
-input.continue-register {
-    background-color: rgb(7, 122, 240);
-}
-a.cancel-register {
-    background-color: rgb(216, 0, 0);
-}
-input.continue-register:hover {
-    transition: all .4s ease;
-    background-color: rgb(1, 92, 184);
-}
-a.cancel-register:hover {
-    transition: all .4s ease;
-    background-color: rgb(160, 2, 2);
-}
-/* Image */
-.image-register {
-    height: 360px;
-    width: 650px;
-    border-radius: 10px;
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 80%;
-    background-image: url(../img/register/register-bg-2.jpeg);
-}
-@media only screen and (max-width:480px) {
-    section.register { 
-        width: 400px;
-        height: 500px;
-    }
-    form.register ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .image-register {
-        display: none;
-    }
-    .content-register {
-        width: 85%;
-        margin-left: 8%;
-    }
-    form.register ul.register {
-        padding-left: 4%;
-    }
-
-}
-
-/* ========================== Mission Page Css ==========================*/
-
-/* Mission */
-section.mission-text {
-    height: 360px;
-    width: 1135px;
-    margin: 50px auto;
-    border: 1px solid #bcc7d3!important;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.content-mission-text {
-    height: 360px;
-    width: 900px;
-    font-family: sans-serif;
-    /* border: 1px solid black; */
-}
-.content-mission-text h2 {
-    font-size: 2.3em;
-    margin: 15px 0;
-}
-.content-mission-text p {
-    font-size: 1.4em;
-    /* margin: 15px 0; */
-    color: #000000;
-}
-@media only screen and (max-width:480px) {
-    section.mission-text { width: 400px; }
-    .content-mission-text { margin: 0 10px; }
-}
-
-/* ========================== Forgot Password Page Css ==========================*/
-/* Forgot Password */
-section.forgot-password {
-    height: 400px;
-    width: 1135px;
-    margin: 50px auto;
-    border: 1px solid #bcc7d3!important;
-    border-radius: 10px;
-    position: relative;
-}
-.content-password {
-    margin: 35px 35px!important;
-    height: 300px;
-    width: 425px!important;
-    font-family: sans-serif;
-}
-
-.content-password h2 {
-    font-size: 2em;
-    margin: 15px 0;
-}
-.content-password p {
-    font-size: 1.2em;
-    color: #000000;
-}
-
-/* Forms */
-form.forgot-password input {
-    background-clip: padding-box;
-    border: 1px solid #bcc7d3;
-    border-radius: .25rem;
-    margin-bottom: 10px;
-    transition: border .15s ease;
-    padding: 8.5px;
-}
-form.forgot-password input:focus {
-    background-color: #ffffff;
-    border: 1.5px solid #b1e1e4;
-}
-
-/* Button login */
-.content-password form input.button-password {
-    color: #ffffff;
-    font-size: 1.05em;
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all .3s ease;
-    background-color: rgb(7, 122, 240);
-}
-.content-password form input.button-password:hover {
-    background-color: rgb(1, 92, 184);
-    transition: all .3s ease;
-}
-
-/* Button Cancel */
-.content-password a.button-cancel {
-    color: #ffffff;
-    font-size: .9em;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: rgb(100, 109, 119);
-}
-
-/* Button Send password */
-.content-password a.button-password {
-    text-decoration: none;
-    color: rgb(7, 122, 240);
-}
-
-/* Image */
-.image-forgot-password {
-    height: 350px;
-    width: 500px;
-    border-radius: 10px;
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/forgot/password/password-bg.jpeg);
-}
-.image-forgot-password-complete {
-    height: 350px;
-    width: 610px;
-    border-radius: 10px;
-    position: absolute;
-    top: 25px;
-    right: 55px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/forgot/password/password-bg-complete.jpeg)!important;
-}
-@media only screen and (max-width:480px) {
-    section.forgot-password { width: 400px; }
-    .content-password { margin: 0 10px; }
-    .content-password h2 {
-        margin-right: 27%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .content-password p {
-        font-size: 1.2em;
-        justify-content: left;
-        margin-right: 27%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: #000000;
-    }
-    .image-forgot-password, .image-forgot-password-complete { display: none; }
-}
-
-/* ========================== Forgot Email Page Css ==========================*/
-
-/* Forgot Email */
-section.forgot-email {
-    height: 400px;
-    width: 1135px;
-    margin: 50px auto;
-    border: 1px solid #bcc7d3!important;
-    border-radius: 10px;
-    position: relative;
-}
-.content-email {
-    margin: 50px 35px;
-    height: 300px;
-    width: 400px;
-    font-family: sans-serif;
-}
-.content-email h2 {
-    font-size: 2em;
-    margin: 15px 0;
-}
-.content-email p {
-    font-size: 1.2em;
-    color: #000000;
-}
-
-/* Forms */
-form.forgot-email input {
-    background-clip: padding-box;
-    border: 1px solid #bcc7d3;
-    border-radius: .25rem;
-    margin-bottom: 10px;
-    transition: border .15s ease;
-    padding: 8.5px;
-}
-form.forgot-email input:focus {
-    background-color: #ffffff;
-    border: 1.5px solid #b1e1e4;
-}
-
-/* Button login */
-.content-email form input.button-email {
-    color: #ffffff;
-    font-size: 1.05em;
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all .3s ease;
-    background-color: rgb(7, 122, 240);
-}
-.content-email form input.button-email:hover {
-    background-color: rgb(1, 92, 184);
-    transition: all .3s ease;
-}
-
-/* Button Cancel */
-.content-email a.button-cancel {
-    color: #ffffff;
-    font-size: .9em;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: rgb(100, 109, 119);
-}
-
-/* Button Send Email */
-.content-email a.button-email {
-    text-decoration: none;
-    color: rgb(7, 122, 240);
-}
-
-/* Image */
-.image-forgot-email {
-    height: 350px;
-    width: 500px;
-    border-radius: 10px;
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    /* background-position-y: -50px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/forgot/email/email-bg.jpeg);
-}
-@media only screen and (max-width:480px) {
-    section.forgot-email { width: 400px; }
-    .content-email { margin: 0 10px; }
-    .content-email p {
-        font-size: 1.2em;
-        justify-content: left;
-        padding-right: 5px;
-        color: #000000;
-    }
-    .image-forgot-email { display: none; }
-}
-
-/* ========================== Login Page Css ==========================*/
-/* Login */
-section.login {
-    height: 400px;
-    width: 1135px;
-    margin: 50px auto;
-    border: 1px solid #bcc7d3!important;
-    border-radius: 10px;
-    position: relative;
-}
-p.incorrect-auth {
-    color: red;
-}
-.content {
-    margin: 0 35px;
-    height: 400px;
-    width: 400px;
-    font-family: sans-serif;
-}
-.content h2 {
-    font-size: 2em;
-    margin: 15px 0;
-}
-.content form label {
-    color: #000000;
-    margin: 10px 0;
-    font-size: 1em;
-}
-.content span {
-    font-size: .95em;
-}
-/* Forms */
-input {
-    background-clip: padding-box;
-    border: 1px solid #bcc7d3;
-    border-radius: .25rem;
-    margin-bottom: 10px;
-    transition: border .15s ease;
-    padding: 8.5px;
-}
-input:focus {
-    background-color: #ffffff;
-    border: 1.5px solid #b1e1e4;
-} 
-
-/* Button login */
-.content form input.button-login {
-    color: #ffffff;
-    font-size: 1.05em;
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: rgb(7, 122, 240);
-}
-.content form input.button-login:hover {
-    background-color: rgb(1, 92, 184);
-}
-
-/* Button Register */
-.content a.button-register {
-    color: #ffffff;
-    font-size: .9em;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: rgb(100, 109, 119);
-}
-
-/* Button Forgot */
-.content a.button-forgot {
-    text-decoration: none;
-    color: rgb(7, 122, 240);;
-}
-
-/* Image */
-.image {
-    height: 350px;
-    width: 500px;
-    border-radius: 10px;
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/login/login-bg.jpeg);
-}
-@media only screen and (max-width:480px) {
-    section.login { width: 400px; }
-    .content { margin: 0 10px; }
-    .image { display: none; }
-}
 
 /* ==========================================================================
    Helper classes
