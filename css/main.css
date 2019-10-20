@@ -446,6 +446,7 @@ div.symbol3 i {
     color: #222;
 }
 @media only screen and (max-width:480px) {
+
     section.client-needs {
         height: 1450px;
     }
@@ -556,6 +557,23 @@ a.mission {
     background-color: rgb(13, 69, 106);
 }
 @media only screen and (max-width:480px) {
+    .info-project .info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .info-project p {
+        margin-top: 10%;
+        margin-left: 50px;
+        font-size: 1.1em;
+        text-align: center;
+        margin: auto;
+    }
+
     div.content-mission {
         width: 90%;
         background-position-x: 50%;
@@ -582,17 +600,17 @@ div.content-bio {
     justify-content: space-between;
 }
 div.image-profile {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     border: transparent;
-    border-radius: 200px;
+    border-radius: 430px;
     margin-left: 5%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -100px;
+    background-position-x: -50px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-    background-image: url(../img/bio/profile/profile-1.jpg);
+    background-image: url(../img/bio/team2.jpeg);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 div.description-bio {
@@ -660,6 +678,23 @@ div.description-bio p {
     }
 }
 @media only screen and (min-width:480px) and (max-width:992px) {
+    .info-project .info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .info-project p {
+        margin-top: 15%;
+        margin-left: 50px;
+        font-size: 1.3em;
+        text-align: center;
+        margin: auto;
+    }
+
     section.quick-bio {
         padding: 0 0;
         margin-bottom: 0;
