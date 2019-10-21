@@ -241,6 +241,8 @@ div.content-welcome h1 {
     font-size: 4em;
     margin-bottom: 5px;
     text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
     font-family: 'Poppins', sans-serif;
 }
 div.content-welcome p {
